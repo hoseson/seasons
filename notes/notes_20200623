@@ -1,0 +1,12 @@
+[Getting a user's physical location]
+Geolocation API
+developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+
+Geolocation API call takes approx. 3~4 seconds.
+However, the return statement will render the JSX code immediately after the call.
+There is no way to wait until we get the coordinates back before we render the coords in the div.
+
+So we're going to use the state of the component to wait.
+In order to do this, we need to change our App component to a class component (currently a functional component)
+
+Inherit React.Component using extends (like in Java)
