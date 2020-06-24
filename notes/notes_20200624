@@ -1,0 +1,13 @@
+[Rules of State]
+Only usable with class components
+    Technically can be used with functional components using the 'hooks' system (something that will be discussed later)
+    But the hooks system is more complicated than the state system
+Easily confused with props
+'State' is a JS object that contains data relevant to a component
+Updating 'state' on a component causes the component to (almost) instantly rerender
+State must be initialized when a component is created
+**State can only be updated using the function 'setState'
+
+
+the key reason behind using state in this 'season' project would be that updating a state on a component will cause it to rerender
+and we need that becuase state will be updated once we get a return latitude value from calling the API
